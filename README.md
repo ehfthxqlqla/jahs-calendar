@@ -2,7 +2,7 @@
 중앙고 학사일정을 ics 파일로 만들었습니다
 
 # 최신 버전 ics 링크
-2026 학사일정:
+2026 학사일정; 아래 링크를 복사하세요.
 
 
 `https://ehfthxqlqla.github.io/jahs-calendar/2026/jahs_schedule.ics`
