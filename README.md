@@ -7,7 +7,7 @@
 
 `https://ehfthxqlqla.github.io/jahs-calendar/2026/jahs_schedule.ics`
 
-**링크를 바로 클릭하여 일정을 불러오는 것은 권장되지 않습니다. 가급적 아래의 캘린더 구독 방법을 통해 구독하세요.**
+**`바로가기 링크`를 직접 클릭하여 일정을 불러오는 것은 권장되지 않습니다. 가급적 아래의 캘린더 구독 방법을 통해 구독하세요.**
 
 [바로가기 링크](https://ehfthxqlqla.github.io/jahs-calendar/2026/jahs_schedule.ics)
 
