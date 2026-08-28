@@ -44,8 +44,8 @@ class SchoolICS:
     def add_event(
         self,
         event_name: str,
-        start_date: datetime,
-        end_date: datetime = None,
+        start_date: date,
+        end_date: date = None,
         event_description: str = None,
         target_grades: tuple = (1, 2, 3), # 기본값: 전체 학년
         holiday: bool = False
@@ -55,12 +55,16 @@ class SchoolICS:
         else: # 2일 이상의 일정이라면
             end_date += timedelta(days=1) # 종료일을 (실제 종료일 + 1)일로 변경, ics는 예를 들어 7/3 - 7/5 일정을 만들고 싶으면 시작일을 7/3, 종료일을 7/6으로 설정해야 캘린더에서 제대로 표시됨.
 
+        """
         if self.tz: # 사용자가 캘린더의 시간대를 설정해놓았다면
             start_date.replace(tzinfo=self.tz) # 시간대 바꾸기
             end_date.replace(tzinfo=self.tz) # 시간대 바꾸기
         
         if end_date < start_date: # 시작이 끝보다 빠르면
             raise ValueError("'end_date' cannot be earlier than 'start_date'")
+
+        폐기: 원래는 datetime을 써서 필요했지만 date 객체로 바꾸고 필요없어짐
+        """
 
 
         event = Event.new( # 이벤트 생성
