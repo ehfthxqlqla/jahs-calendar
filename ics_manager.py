@@ -147,8 +147,3 @@ class MenuICS:
             end=menu_date + timedelta(days=1), # 종료 날짜 (하루짜리라서 x+1일)
             summary=menu_name, # 일정 이름
         )
-        event.add(
-            "x-grade", "".join(
-                '1' if grade in target_grades else '0' for grade in range(1, 3+1) # 대상 학년 안에 n학년이 있으면 1, 없으면 0
-            )
-        )
